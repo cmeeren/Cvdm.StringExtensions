@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net40;netstandard1.0;netcoreapp1.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Cvdm.StringExtensions.xml</DocumentationFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Christer van der Meeren</Authors>
+    <Company />
+    <Product />
+    <Description>Useful extension methods for strings.</Description>
+    <PackageLicenseUrl>https://github.com/cmeeren/Cvdm.StringExtensions/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/cmeeren/Cvdm.StringExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cmeeren/Cvdm.StringExtensions</RepositoryUrl>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'!='net40'">
+    <DefineConstants>FEATURE_ASSEMBLY_METADATA_ATTRIBUTE</DefineConstants>
+  </PropertyGroup>
+
+</Project>
